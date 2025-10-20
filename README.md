@@ -1,5 +1,11 @@
 # Kanban Board - Sistema de Gestión de Tareas y Proyectos
 
+## Integrantes:
+- **Nycolas Jamevit Cabrera Perdomo**
+- **Juan Pablo Cubides**
+- **Nicolas Chica**
+- **Juan Bastidas**
+
 Una aplicación web completa para gestionar tareas y proyectos mediante tableros Kanban con funcionalidad de arrastrar y soltar (drag and drop).
 
 ## Características Principales
