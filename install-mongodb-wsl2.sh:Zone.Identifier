@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://claude.ai/chat/355be008-0a85-4c27-8fa6-7bd2e4221ff5
+HostUrl=https://claude.ai/api/organizations/9f0057eb-ca14-47d0-9b1c-4a76cce88199/conversations/355be008-0a85-4c27-8fa6-7bd2e4221ff5/wiggle/download-file?path=%2Fmnt%2Fuser-data%2Foutputs%2Finstall-mongodb-wsl2.sh
