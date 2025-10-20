@@ -1,10 +1,10 @@
-# 🎯 Kanban Board - Sistema de Gestión de Tareas y Proyectos
+# Kanban Board - Sistema de Gestión de Tareas y Proyectos
 
 Una aplicación web completa para gestionar tareas y proyectos mediante tableros Kanban con funcionalidad de arrastrar y soltar (drag and drop).
 
-## 📋 Características Principales
+## Características Principales
 
-### ✅ Funcionalidades Implementadas
+### Funcionalidades Implementadas
 
 - **Autenticación Completa**: Sistema de registro e inicio de sesión con contraseñas encriptadas (bcrypt)
 - **Gestión de Proyectos**: Crear, ver, editar y eliminar tableros de proyectos
@@ -15,7 +15,7 @@ Una aplicación web completa para gestionar tareas y proyectos mediante tableros
 - **Interfaz Moderna**: Diseño responsive y atractivo con animaciones suaves
 - **Protección de Rutas**: Middleware JWT para proteger endpoints privados
 
-## 🛠️ Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 ### Backend
 - **Node.js** con **Express**: Framework web
@@ -32,7 +32,7 @@ Una aplicación web completa para gestionar tareas y proyectos mediante tableros
 - **React Toastify**: Notificaciones
 - **date-fns**: Manejo de fechas
 
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 kanban-app/
@@ -76,7 +76,7 @@ kanban-app/
     └── package.json
 ```
 
-## 🚀 Instalación y Configuración
+## Instalación y Configuración
 
 ### Prerrequisitos
 
@@ -162,7 +162,7 @@ npm start
 
 La aplicación se abrirá automáticamente en `http://localhost:3000`
 
-## 📖 Uso de la Aplicación
+## Uso de la Aplicación
 
 ### 1. Registro e Inicio de Sesión
 
@@ -207,44 +207,7 @@ La aplicación se abrirá automáticamente en `http://localhost:3000`
 - Haz clic en el icono 🗑️ de la tarea
 - Confirma la eliminación
 
-## 🔑 API Endpoints
-
-### Autenticación
-
-```
-POST /api/auth/register - Registrar nuevo usuario
-POST /api/auth/login    - Iniciar sesión
-GET  /api/auth/me       - Obtener usuario actual (requiere autenticación)
-```
-
-### Tableros
-
-```
-GET    /api/boards           - Obtener todos los tableros del usuario
-GET    /api/boards/:id       - Obtener un tablero específico
-POST   /api/boards           - Crear nuevo tablero
-PUT    /api/boards/:id       - Actualizar tablero
-DELETE /api/boards/:id       - Eliminar tablero
-```
-
-### Columnas
-
-```
-POST   /api/boards/:id/columns              - Añadir columna
-PUT    /api/boards/:id/columns/:columnId    - Actualizar columna
-DELETE /api/boards/:id/columns/:columnId    - Eliminar columna
-```
-
-### Tareas
-
-```
-POST   /api/boards/:id/tasks                    - Añadir tarea
-PUT    /api/boards/:id/tasks/:taskId            - Actualizar tarea
-PUT    /api/boards/:id/tasks/:taskId/move       - Mover tarea (drag & drop)
-DELETE /api/boards/:id/tasks/:taskId            - Eliminar tarea
-```
-
-## 🔒 Seguridad
+## Seguridad
 
 - Contraseñas encriptadas con bcrypt (10 salt rounds)
 - Autenticación JWT con tokens que expiran
@@ -252,7 +215,7 @@ DELETE /api/boards/:id/tasks/:taskId            - Eliminar tarea
 - Protección de rutas con middleware de autenticación
 - CORS configurado para permitir peticiones del frontend
 
-## 🎨 Características de UI/UX
+## Características de UI/UX
 
 - **Diseño Responsive**: Funciona perfectamente en móviles, tablets y desktop
 - **Animaciones Suaves**: Transiciones y efectos visuales agradables
@@ -260,89 +223,3 @@ DELETE /api/boards/:id/tasks/:taskId            - Eliminar tarea
 - **Drag & Drop Intuitivo**: Visual feedback durante el arrastre
 - **Loading States**: Indicadores de carga para mejor experiencia
 - **Validación de Formularios**: Feedback instantáneo en campos
-
-## 🐛 Solución de Problemas
-
-### Error: MongoDB no conecta
-
-```bash
-# Verifica que MongoDB esté corriendo
-mongod --version
-# Verifica la URI en .env
-# Por defecto: mongodb://localhost:27017/kanban_db
-```
-
-### Error: CORS
-
-```bash
-# Verifica que el backend esté en el puerto 5000
-# Verifica que el frontend apunte a http://localhost:5000/api
-```
-
-### Error: Token inválido
-
-```bash
-# Limpia localStorage y vuelve a iniciar sesión
-# En la consola del navegador:
-localStorage.clear()
-```
-
-## 📝 Scripts Disponibles
-
-### Backend
-
-```bash
-npm start     # Inicia el servidor
-npm run dev   # Inicia con nodemon (auto-reload)
-```
-
-### Frontend
-
-```bash
-npm start     # Inicia la aplicación en modo desarrollo
-npm build     # Crea build de producción
-npm test      # Ejecuta tests
-```
-
-## 🚀 Despliegue en Producción
-
-### Backend
-
-1. Configura variables de entorno en tu servidor
-2. Usa un servicio de MongoDB en la nube (MongoDB Atlas)
-3. Cambia `NODE_ENV=production`
-4. Usa PM2 o similar para mantener el proceso activo
-
-### Frontend
-
-```bash
-npm run build
-# Sirve la carpeta build/ con un servidor web (nginx, Apache, etc.)
-```
-
-## 🤝 Contribuciones
-
-Las contribuciones son bienvenidas. Por favor:
-
-1. Haz fork del proyecto
-2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
-
-## 📄 Licencia
-
-Este proyecto está bajo la Licencia MIT.
-
-## 👨‍💻 Autor
-
-Desarrollado como proyecto de demostración de aplicación Full Stack.
-
-## 🙏 Agradecimientos
-
-- React Beautiful DND por la excelente biblioteca de drag and drop
-- La comunidad de React y Node.js por sus recursos
-
----
-
-¡Disfruta gestionando tus proyectos con Kanban Board! 🎯
