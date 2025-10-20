@@ -42,7 +42,7 @@ const Login = () => {
     <div className="auth-container">
       <div className="auth-card">
         <div className="auth-header">
-          <h1>🎯 Kanban Board</h1>
+          <h1>Kanban Board</h1>
           <h2>Iniciar Sesión</h2>
         </div>
 

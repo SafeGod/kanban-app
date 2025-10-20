@@ -121,7 +121,7 @@ const Dashboard = () => {
     <div className="dashboard">
       <nav className="navbar">
         <div className="navbar-content">
-          <h1>🎯 Kanban Board</h1>
+          <h1>Kanban Board</h1>
           <div className="navbar-actions">
             <span className="user-name">Hola, {user?.name}</span>
             <button onClick={handleLogout} className="btn btn-secondary">
